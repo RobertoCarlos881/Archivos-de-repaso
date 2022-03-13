@@ -1,19 +1,14 @@
-//Variables
-console.log("Hola mundo")
+//Destructuring de arrays
+const tecnologias = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'NODEJS']
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const [var1, var2 , var3, var4, var5] = tecnologias;
 
-//RE asignar
-cliente = 20;
-cliente = true;
+//para no tener que definir tantas variables se pueden dejar vacios y nadamas definir el valor que queremos
+//const [ , , , , var5] = tecnologias
+//En el sentido de trabajo es mucho mejor mapear todo el arreglo
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+console.log(var1)
+console.log(var2)
+console.log(var3)
+console.log(var4)
+console.log(var5)

@@ -1,19 +1,13 @@
-//Variables
-console.log("Hola mundo")
+//Funciones - arrow functions
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const sumar = (numero, numero2) => {
+    return numero + numero2
+}
 
-//RE asignar
-cliente = 20;
-cliente = true;
+const sumar2 = (numero, numero2) => numero + numero2 
+//puedes hacer esto, solo si es una linea de codigo
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+const resultado = sumar(50,202)
+const resultado2 = sumar2(50,202)
+console.log(resultado);
+console.log(resultado2);

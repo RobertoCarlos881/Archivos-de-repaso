@@ -1,19 +1,8 @@
-//Variables
-console.log("Hola mundo")
+//Arrays o arreglos
+//La unica similitud que comparte un array con un objeto, es que pueden almacenar gran cantidad de datos
+const tecnologias = [20, 30, true, "react", "javascript"]
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
-
-//RE asignar
-cliente = 20;
-cliente = true;
-
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+console.log(tecnologias[3])
+console.log(tecnologias)
+console.log(tecnologias.length);
+console.log(tecnologias.toString());

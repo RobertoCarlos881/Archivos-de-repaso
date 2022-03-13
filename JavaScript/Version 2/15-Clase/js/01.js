@@ -1,19 +1,9 @@
-//Variables
-console.log("Hola mundo")
+//Function expression
+//Una de las principales diferencias con declaration es que no se puede llamar antes de definir la funcion
+//otra es su estructura de definirla que tiene que ver con el primer punto
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
-
-//RE asignar
-cliente = 20;
-cliente = true;
-
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+const sumar = function (numero, numero2) {
+    return numero + numero2
+}
+const resultado = sumar(25, 20)
+console.log(resultado)

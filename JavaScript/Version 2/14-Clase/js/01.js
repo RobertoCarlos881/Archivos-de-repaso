@@ -1,19 +1,20 @@
-//Variables
-console.log("Hola mundo")
+//funciones que retornan valores
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+function sumar(numero = 0, numero2 = 0) {
+    return [numero + numero2, "Hola mundo"]
+}
 
-//RE asignar
-cliente = 20;
-cliente = true;
+const [resultado, holaMundo] = sumar(20, 30)
+console.log(resultado)
+console.log(holaMundo);
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
+function sumar2(numero = 0, numero2 = 0) {
+    return {
+        resultado2: numero + numero2, 
+        mensaje: "Hola mundo"
+    }
+}
 
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+const {resultado2, mensaje} = sumar2(50, 80)
+console.log(resultado2)
+console.log(mensaje)

@@ -1,19 +1,20 @@
-//Variables
-console.log("Hola mundo")
+//Objetos - Unir 2 objetos
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
 
-//RE asignar
-cliente = 20;
-cliente = true;
+const cliente = {
+    nombre: "Roberto",
+    premium: true
+}
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+// const nuevoObjeto = Object.assign(producto, cliente) no hacerlo de esta forma, porque los datos nombre se pierden
+//Normalmente el spread operator, no modifica los datos, solamente hay que parametrizar los objetos
+const nuevoObjeto2 = { 
+    producto: {...producto}, 
+    cliente: {...cliente} 
+}
+console.log(nuevoObjeto2)

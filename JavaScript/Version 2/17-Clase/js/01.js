@@ -1,19 +1,19 @@
-//Variables
-console.log("Hola mundo")
+//Arrow functionc con array methods
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const tecnologias = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'NODEJS']
 
-//RE asignar
-cliente = 20;
-cliente = true;
+const nuevoArray = tecnologias.filter( tech => {
+    return tech !== 'HTML'; //traer todos menos html
+    //return tech === 'REACT'; //traer solo a react
+})
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
+const nuevoArray2 = tecnologias.map( tech => {
+    if(tech === "HTML"){
+        return "GRAPHQL"
+    } else {
+        return tech;
+    }
+})
 
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+console.log(nuevoArray);
+console.log(nuevoArray2);

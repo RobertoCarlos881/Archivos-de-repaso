@@ -1,19 +1,26 @@
-//Variables
-console.log("Hola mundo")
+//Objetos
+const nombre = "Tablet";
+const precio = 300;
+const disponible = true
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const producto = {
+    Nombre: "Tablet",
+    Precio: 300,
+    Disponible: true
+}
 
-//RE asignar
-cliente = 20;
-cliente = true;
+console.table(producto)
+//Destructurar objetos
+console.log(producto.Nombre)
+//Otra forma de destructuring
+const { Nombre } = producto
+console.log(Nombre)
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+//Object literal enhacement
+const autenticado = true;
+const user = "Roberto";
+const nuevoObjeto = {
+    autenticado,
+    user
+}
+console.table(nuevoObjeto)

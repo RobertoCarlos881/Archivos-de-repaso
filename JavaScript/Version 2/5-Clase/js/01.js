@@ -1,19 +1,21 @@
-//Variables
-console.log("Hola mundo")
+//Objetos manipulacion
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+//Se pueden congelar las propiedades y que no se les pueda hacer ningun cambio
+//Object.freeze(producto)
+//Con seal solo se pueden modificar las propiedades existentes
+//Object.seal(producto)
 
-//RE asignar
-cliente = 20;
-cliente = true;
+//Editar un objeto
+producto.nombre = "Monitor Curvo"
+//Crear un valor de un objeto
+producto.imagen = "imagen.jpg"
+//Eliminar un objeto
+delete producto.disponible
+//Se pueden borrar datos que no existan en el objeto
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+console.table(producto)

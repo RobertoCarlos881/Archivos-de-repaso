@@ -1,19 +1,40 @@
-//Variables
-console.log("Hola mundo")
+//Operaciones en los arreglos
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const tecnologias = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'NODEJS']
 
-//RE asignar
-cliente = 20;
-cliente = true;
+//Añadir elementos al array
+//Viejo o no recomendable con react
+//tecnologias.unshift('NEXTJS') //añade al principio del array
+//tecnologias.push('GRAPHQL') //añade al final del array
+//Nuevo o mejor
+const nuevoArreglo = [ "NEXTJS", ...tecnologias, 'GRAPHQL' ] 
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
+//Eliminar elementos al array
+//Viejo o no recomendable con react
+//tecnologias.pop() //elimina del final
+//tecnologias.shift() //primer elemento del arreglo
+//tecnologias.splice(2, 1) //El primer elemento es para eliminar el elemento en la posicion
+//el segundo numero es el que dice cuantos elementos debe de eleminar a partir de este
 
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+const nuevoArray = tecnologias.filter( function (tech) {
+    //return tech !== 'HTML'; //traer todos menos html
+    return tech === 'REACT'; //traer solo a react
+})
+
+//Editar elementos del array
+//Viejo o no recomendable con react
+//tecnologias[0] = 'php'
+const nuevoArray2 = tecnologias.map( function (tech) {
+    if(tech === "HTML"){
+        return "GRAPHQL"
+    } else {
+        return tech;
+    }
+})
+
+
+//Nota: porque no es recomendable lo que se dice que no es recomendable, mas que nada porque se alteran los datos.
+console.table(tecnologias)
+console.table(nuevoArreglo)
+console.log(nuevoArray);
+console.log(nuevoArray2);

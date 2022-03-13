@@ -1,19 +1,20 @@
-//Variables
-console.log("Hola mundo")
+//Objetos - Destructuring con 2 o mas objetos
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
 
-//RE asignar
-cliente = 20;
-cliente = true;
+const cliente = {
+    nombre: "Roberto",
+    premium: true
+}
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
+//tener cuidado cuando se destructura un objeto ya que puede tener nombres iguales y pueden causar conflictos,
+//satisfactoriamete se puede parametrizar el dato como se observa en el segundo const
+const { nombre, precio, disponible } = producto
+const { nombre: nombreCliente, premium } = cliente
 
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+console.log(nombre, precio, disponible)
+console.log(nombreCliente, premium)

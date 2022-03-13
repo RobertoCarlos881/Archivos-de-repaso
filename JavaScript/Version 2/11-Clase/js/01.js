@@ -1,19 +1,17 @@
-//Variables
-console.log("Hola mundo")
+//Iteradores en JS
+const tecnologias = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'NODEJS']
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+//ForEach - Accede a cada elemento del array
+const arrayForeach = tecnologias.forEach(function (tech) {
+    return tech;
+})
 
-//RE asignar
-cliente = 20;
-cliente = true;
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
+//map - Crea un nuevo array
+//Es mejor usar map en react
+const arrayMap = tecnologias.map(function (tech) {
+    return tech;
+})
 
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+console.log(arrayForeach)
+console.log(arrayMap);
