@@ -1,19 +1,13 @@
-//Variables
-console.log("Hola mundo")
+//Scope - alcance de una variable
+const precio = 300;
+function unaFuncion() {
+    const precio = 600
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+    console.log(precio);
+}
 
-//RE asignar
-cliente = 20;
-cliente = true;
+if(true) {
+    console.log(precio);
+}
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+unaFuncion();

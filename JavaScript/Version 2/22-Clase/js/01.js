@@ -1,19 +1,12 @@
-//Variables
-console.log("Hola mundo")
+//Operador terniario
+const autenticado = true;
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+autenticado ? console.log('Usuario autenticado') : console.log('Usuario no autenticado');
+//Nombre de la funcion o parametro a pasar, si el dato es verdadero o solicitado, el dato si es erroneo
 
-//RE asignar
-cliente = 20;
-cliente = true;
+const saldo = 600
+const pagar = 650
+const tarjeta = false
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+saldo > pagar ? console.log('Puedes pagar con tu saldo') : tarjeta ?
+    console.log('Puedes pagar con tarjeta') : console.log('NO puedes pagar');

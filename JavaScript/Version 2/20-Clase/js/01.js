@@ -1,19 +1,16 @@
-//Variables
-console.log("Hola mundo")
+//Comparacion y valor estricto
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const numero1 = 20;
+const numero2 = "20"
 
-//RE asignar
-cliente = 20;
-cliente = true;
+/* 
+ == Comparacion pero no es estricta
+ === Comparacion estricta
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
+*/
 
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+if(numero1 === Number(numero2)) {
+    console.log('Si son iguales');
+} else {
+    console.log('No son iguales');
+}

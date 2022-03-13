@@ -1,19 +1,15 @@
-//Variables
-console.log("Hola mundo")
+//Or y and
+const saldo = 600
+const pagar = 500
+const tarjeta = true
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+/*
+    || si se cumple una ya paso
+    && se tienen que cumplir las 2 para pasar
+*/
 
-//RE asignar
-cliente = 20;
-cliente = true;
-
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+if(saldo > pagar ||/*&&*/ tarjeta) {
+    console.log('Puedes pagar con tu saldo');
+} else {
+    console.log('Estas pobre');
+}

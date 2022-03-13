@@ -1,19 +1,17 @@
-//Variables
-console.log("Hola mundo")
+//Condicionales
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const disponible = 4000;
+const retirar = 20000;
 
-//RE asignar
-cliente = 20;
-cliente = true;
+if(disponible > retirar) {
+    console.log('Si puedes retirar');
+} else {
+    console.log('No puedes retirar');
+}
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+/**
+ * <
+ * >
+ * <=
+ * >=
+ */
