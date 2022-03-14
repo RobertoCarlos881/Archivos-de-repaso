@@ -1,19 +1,14 @@
-//Variables
-console.log("Hola mundo")
-
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
-
-//RE asignar
-cliente = 20;
-cliente = true;
-
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+//Eventos del DOM - submit
+const formulario = document.querySelector('#formulario')
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    //preventDefault lo puedes usar para validar y despues mandar datos
+    const nombre = document.querySelector('.nombre').value
+    const password = document.querySelector('.password').value
+    if(nombre === "" || password === "") {
+        console.log("Todos los campos son obligatorios");
+    } else {
+        console.log("Todo bien, continua");
+    }
+    console.log('Enviaste un formulario');
+})

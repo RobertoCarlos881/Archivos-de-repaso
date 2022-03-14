@@ -1,19 +1,23 @@
-//Variables
-console.log("Hola mundo")
+//Eventos del DOM - inputs
+const inputNombre = document.querySelector('.nombre')
+inputNombre.addEventListener('input', function (e) {
+    //console.log("Hola soy input");
+    //console.log(inputNombre.value); no es la forma adecuada
+    console.log(e.target.value);
+})
+/*
+    input - es muy comun porque captura todos los eventos
+    keydown - se activa cuando pulsan una tecla
+    keyup - se activa cuando levantas la tecla o en correcion cuando se deja de presionar
+*/
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const inputPassword = document.querySelector('.password')
+inputPassword.addEventListener('input', funcionPassword)
 
-//RE asignar
-cliente = 20;
-cliente = true;
+function funcionPassword(e) {
+    inputPassword.type = 'text';
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+    setTimeout(() => {
+        inputPassword.type = 'password';
+    }, 1000);
+}

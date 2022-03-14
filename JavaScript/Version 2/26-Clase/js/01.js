@@ -1,19 +1,14 @@
-//Variables
-console.log("Hola mundo")
+//Modificar html con js
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+const heading = document.querySelector('.heading')
 
-//RE asignar
-cliente = 20;
-cliente = true;
+heading.textContent = 'Un nuevo heading'
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
+console.log(heading);
 
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+const inputNombre = document.querySelector('#nombre')
+inputNombre.value = "Un valor por default"
+console.log(inputNombre);
+
+const enlaces = document.querySelectorAll('.navegacion a')
+enlaces.forEach( enlace => enlace.textContent = 'Nuevo Enlace')

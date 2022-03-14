@@ -1,19 +1,13 @@
-//Variables
-console.log("Hola mundo")
+//Eventos del DOM
+//Clicks
+const heading = document.querySelector('.heading')
+heading.addEventListener('click', () => {
+    heading.textContent = 'Nuevo heading al dar click'
+})
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
-
-//RE asignar
-cliente = 20;
-cliente = true;
-
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+const enlaces = document.querySelectorAll('.navegacion a')
+enlaces.forEach( enlace => { 
+    enlace.addEventListener('click', () => {
+        enlace.textContent = 'Nuevo heading al dar click'
+    })
+})

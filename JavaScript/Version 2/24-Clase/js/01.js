@@ -1,19 +1,17 @@
-//Variables
-console.log("Hola mundo")
+//Selectores del DOM
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+//querySelector nos trae 1 o 2 elementos
+//querySelectorAll nos trae todos los elementos
+const heading = document.querySelector('.heading')
 
-//RE asignar
-cliente = 20;
-cliente = true;
+//se puede acceder a varias propiedades de este mismo si es un objeto
+console.log(heading)
+console.log(heading.textContent);
+console.log(heading.tagName);
+console.log(heading.classList);
+console.log(heading.id);
 
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
+//esto de aqui solo nos va a traer el elemento a, para traer todo veremos el querySelectorAll
+const enlaces = document.querySelector('.navegacion a')
 
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+console.log(enlaces);

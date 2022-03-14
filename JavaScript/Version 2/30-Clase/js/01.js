@@ -1,19 +1,25 @@
-//Variables
-console.log("Hola mundo")
+//Eventos del DOM - modificar html
+const formulario = document.querySelector('#formulario')
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+  
+    const nombre = document.querySelector('.nombre').value
+    const password = document.querySelector('.password').value
 
-let cliente = "Roberto";
-let precioCLiente = 180;   //camelcase siempre la segunda palabra en adelante la primera letra debe ser
-//en mayusculas
+    const alertaPrevia = document.querySelector('.alerta')
+    if(alertaPrevia){
+        alertaPrevia.remove()
+    }
+    const alerta = document.createElement('DIV');
+    alerta.classList.add('alerta')
 
-//RE asignar
-cliente = 20;
-cliente = true;
-
-//Se puede inicializar cualquier variable en 0
-let precio;
-precio = 1000;
-
-//Impreciones
-console.log(precio);
-console.log(cliente);
-console.log(precioCLiente);
+    if(nombre === "" || password === "") {
+        alerta.textContent = "Todos los campos son obligatorios"
+        alerta.classList.add('error')
+    } else {
+        alerta.textContent = "Todos bien"
+        alerta.classList.add('exito')
+    }
+    
+    formulario.appendChild(alerta)
+})
